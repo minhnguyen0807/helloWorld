@@ -1,29 +1,57 @@
-<!--
-    Author: Gabriel Solomon, 2021
-    this is a multi-line comment in HTML. this information is not rendered.
-    Several of the comments below are single-line comments.
-    student html should include some of your own comments/notes per the grading rubric.
-
-    please feel free to edit these comments.  Thank you!
--->
-
-<!-- DOCTYPE is required to insure the clients browser properly parses the html -->
 <!DOCTYPE html>
-<!-- html tag that creates an HTML document -->
-<html>
-    <!-- html tag contains the title & other information not displayed-->
-    <head>
-        <!--
-            a html title tag that shows up in your browser page bookmark. always set
-            a proper title
-        -->
-        <title>Hello World Title</title>
-    </head>
-    <!-- html tag that holds the contains displayed on the webpage -->
-    <body>
-        <!-- a html paragraph tag that contains text that will be displayed on the web page -->
-        <p>Hello World!</p>
-
-        <p><a href="./aboutMe.html" target="_blank">Click Here to see About Me</a></p>
-    </body>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>INDEX - Simple HTML CSS ABOUT ME PORTFOLIO PAGE</title>
+<style>
+    body{
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    .container{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .fixed-header, .fixed-footer{
+        width: 100%;
+        position: fixed;
+        background: #333;
+        padding: 10px 0;
+        color: #fff;
+    }
+    .fixed-header{
+        top: 0;
+    }
+    .fixed-footer{
+        bottom: 0;
+    }
+    nav a{
+        color: #fff;
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+    }
+    .container p{
+        line-height: 200px;
+    }
+</style>
+</head>
+<body>
+    <div class="fixed-header">
+        <div class="container">
+            <nav>
+                <a href="./index.html">Home</a>
+                <a href="./aboutMe.html">About Me</a>
+                <a href="./contactMe.html">Contact</a>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+    	<p>THIS IS INDEX PAGE</p>
+        <p>Quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Ut tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio. Phasellus auctor velit at lacus blandit, commodo iaculis justo viverra. Etiam vitae est arcu. Mauris vel congue dolor. Aliquam eget mi mi. Fusce quam tortor, commodo ac dui quis, bibendum viverra erat. Maecenas mattis lectus enim, quis tincidunt dui molestie euismod. Curabitur et diam tristique, accumsan nunc eu, hendrerit tellus.</p>
+    </div>
+    <div class="fixed-footer">
+        <div class="container">Simple Footer</div>
+    </div>
+</body>
 </html>
